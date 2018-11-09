@@ -71,6 +71,9 @@ fun! s:Check_inp()
   endif
 endfun
 
+" nginx conf
+au BufNewFile,BufRead nginx.conf,ngx.conf		setf nginx
+
 " A-A-P recipe
 au BufNewFile,BufRead *.aap			setf aap
 
